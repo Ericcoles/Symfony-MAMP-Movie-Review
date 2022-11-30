@@ -1,0 +1,39 @@
+{% extends "./base.html.twig" %}
+
+{% block body %}
+    <div class="w-4/5 m-auto text-center">
+        <div class="py-12 border-b border-gray-200">
+            <h1 class="text-6xl pt-12 pb-8">
+                Movies Review
+            </h1>
+
+            <span class="font text-gray-500 italic">
+                The legacy of Elvis Presley remains one of many complications. The “King of Rock” not only owns thousands of records for the music industry. He undeniably helped to shape the world of Rock music. At the same time, his legacy as a performer who borrowed and stole from black performers is not something to overlook. Australian director Baz Luhrman turned his camera on the famed star, bringing his maximalist filmmaking techniques to the ultimate showman. Thanks to Austin Butler’s star-making turn, Elvis earns its place as one of the definitive takes on the musician. Yet there are plenty of issues that undermine this success. 
+
+                Told from the point of view of his manager Colonel Tom Parker (Tom Hanks), the legend of Elvis Presley comes into focus. In rural Mississippi, a young Elvis (Butler) gains a following amongst a group of traveling musicians. Parker represents one of these artists and quickly realizes Presley’s draw as a performer. Soon, Parker and Presley begin to change show business forever. Presley becomes a phenomenon. Parker capitalizes on that phenomenon in every way financially possible. However, the two could only climb so high before an inevitable fall. 
+
+                The two key players in the success of Elvis are undeniably Luhrman and Butler. Rarely has Luhrman’s visual aesthetic been so perfectly matched to his material. While The Great Gatsby and Romeo + Juliet shine, Presley’s larger-than-life persona could only be captured by grandiose storytelling. Luhrman infuses the film with beautiful color schemes, fast editing sequences, and montage after montage. Luhrman makes every aspect of Presley’s life feel as wild as the legends. 
+                  {# <img>
+                   src="{{ }}"
+                   class="rounded-xl w-full shadow-xl"
+                   alt="Elvis"
+                 <img/> #}
+
+                Butler brings this legendary status to life. The actor embodies the physicality of Elvis in ways that surpass imitation. The energy, the shine, the charisma, and the mannerisms are all on display. Even a wink and smile from Butler feel plucked off of a lunchbox. While other performers, including Taron Egerton and Raimi Malek, have recreated their iconoclast counterparts, Butler seems to live in the role. This movie would fail without this performance, perfectly keyed into Elvis and Luhrman’s style.
+            </span>
+        </div>
+    </div>
+{# style={{height: "5rem", width: "5rem”}} #}
+
+    {% if app.user %}
+        <div class="mx-auto w-4/5 my-8">
+            <a 
+                href="/movies/create" 
+                class="uppercase border border-gray-500 text-lg py-4 px-6 rounded transition transition-all bg-gray-800 text-white hover:bg-white hover:text-gray-800">
+                New movie
+            </a>
+        </div>
+    {% endif %}
+    
+    </div>
+{% endblock %}
